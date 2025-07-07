@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - Grace Community Church</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-church"></i>
+                <span>Grace Community Church</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="donate.html" class="nav-link donate-btn active">Donate</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="donate-header">
+        <div class="container">
+            <div class="donate-header-content">
+                <h1>Support Our Mission</h1>
+                <p>Your generous donation helps us continue serving our community and spreading God's love</p>
+                <div class="impact-stats">
+                    <div class="stat">
+                        <span class="stat-number">1,200+</span>
+                        <span class="stat-label">Families Served</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Community Programs</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">25+</span>
+                        <span class="stat-label">Years of Service</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Options -->
+    <section class="donation-options">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ways to Give</h2>
+                <p>Choose the giving option that works best for you</p>
+            </div>
+            
+            <div class="donation-methods">
+                <div class="donation-tabs">
+                    <button class="tab-btn active" data-tab="online">Online Giving</button>
+                    <button class="tab-btn" data-tab="recurring">Monthly Giving</button>
+                    <button class="tab-btn" data-tab="other">Other Methods</button>
+                </div>
+
+                <!-- Online Giving Tab -->
+                <div class="tab-content active" id="online">
+                    <div class="donation-form-container">
+                        <div class="donation-form">
+                            <h3>Make a One-Time Donation</h3>
+                            <form id="donationForm">
+                                <div class="amount-selection">
+                                    <h4>Select Amount</h4>
+                                    <div class="amount-buttons">
+                                        <button type="button" class="amount-btn" data-amount="25">$25</button>
+                                        <button type="button" class="amount-btn" data-amount="50">$50</button>
+                                        <button type="button" class="amount-btn" data-amount="100">$100</button>
+                                        <button type="button" class="amount-btn" data-amount="250">$250</button>
+                                        <button type="button" class="amount-btn" data-amount="500">$500</button>
+                                        <button type="button" class="amount-btn custom-amount">Other</button>
+                                    </div>
+                                    <div class="custom-amount-input" style="display: none;">
+                                        <label for="customAmount">Enter Amount:</label>
+                                        <input type="number" id="customAmount" name="customAmount" min="1" placeholder="$">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="donationType">Donation Type</label>
+                                    <select id="donationType" name="donationType" required>
+                                        <option value="">Select donation type</option>
+                                        <option value="general">General Fund</option>
+                                        <option value="building">Building Fund</option>
+                                        <option value="missions">Missions</option>
+                                        <option value="youth">Youth Ministry</option>
+                                        <option value="community">Community Outreach</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+
+                                <div class="donor-info">
+                                    <h4>Donor Information</h4>
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="firstName">First Name *</label>
+                                            <input type="text" id="firstName" name="firstName" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="lastName">Last Name *</label>
+                                            <input type="text" id="lastName" name="lastName" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email Address *</label>
+                                        <input type="email" id="email" name="email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phone">Phone Number</label>
+                                        <input type="tel" id="phone" name="phone">
+                                    </div>
+                                </div>
+
+                                <div class="payment-method">
+                                    <h4>Payment Method</h4>
+                                    <div class="payment-options">
+                                        <label class="payment-option">
+                                            <input type="radio" name="paymentMethod" value="card" checked>
+                                            <span class="checkmark"></span>
+                                            <i class="fas fa-credit-card"></i> Credit/Debit Card
+                                        </label>
+                                        <label class="payment-option">
+                                            <input type="radio" name="paymentMethod" value="paypal">
+                                            <span class="checkmark"></span>
+                                            <i class="fab fa-paypal"></i> PayPal
+                                        </label>
+                                        <label class="payment-option">
+                                            <input type="radio" name="paymentMethod" value="bank">
+                                            <span class="checkmark"></span>
+                                            <i class="fas fa-university"></i> Bank Transfer
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group checkbox-group">
+                                    <input type="checkbox" id="anonymous" name="anonymous">
+                                    <label for="anonymous">Make this donation anonymous</label>
+                                </div>
+
+                                <div class="form-group checkbox-group">
+                                    <input type="checkbox" id="taxReceipt" name="taxReceipt" checked>
+                                    <label for="taxReceipt">Send me a tax receipt</label>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-large">
+                                    <i class="fas fa-heart"></i> Donate Now
+                                </button>
+                            </form>
+                        </div>
+
+                        <div class="donation-info">
+                            <div class="security-badge">
+                                <i class="fas fa-shield-alt"></i>
+                                <div>
+                                    <h4>Secure Donation</h4>
+                                    <p>Your donation is processed securely with 256-bit SSL encryption</p>
+                                </div>
+                            </div>
+                            
+                            <div class="tax-info">
+                                <h4>Tax Deductible</h4>
+                                <p>Grace Community Church is a 501(c)(3) organization. Your donation is tax-deductible to the full extent allowed by law.</p>
+                                <p><strong>Tax ID:</strong> 12-3456789</p>
+                            </div>
+
+                            <div class="contact-info">
+                                <h4>Questions?</h4>
+                                <p>If you have any questions about donating, please contact us:</p>
+                                <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                                <p><i class="fas fa-envelope"></i> giving@gracecommunitychurch.org</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Monthly Giving Tab -->
+                <div class="tab-content" id="recurring">
+                    <div class="recurring-giving">
+                        <div class="recurring-info">
+                            <h3>Set Up Monthly Giving</h3>
+                            <p>Monthly giving is the most effective way to support our ongoing ministry. Your recurring donation helps us plan and budget for our programs throughout the year.</p>
+                            
+                            <div class="recurring-benefits">
+                                <div class="benefit">
+                                    <i class="fas fa-calendar-check"></i>
+                                    <h4>Consistent Support</h4>
+                                    <p>Provide steady support for our ministries and programs</p>
+                                </div>
+                                <div class="benefit">
+                                    <i class="fas fa-hand-holding-heart"></i>
+                                    <h4>Easy Management</h4>
+                                    <p>Set it once and give automatically each month</p>
+                                </div>
+                                <div class="benefit">
+                                    <i class="fas fa-chart-line"></i>
+                                    <h4>Greater Impact</h4>
+                                    <p>Help us plan long-term projects and initiatives</p>
+                                </div>
+                            </div>
+                            
+                            <a href="#" class="btn btn-primary">Set Up Monthly Giving</a>
+                        </div>
+                        
+                        <div class="recurring-amounts">
+                            <h4>Monthly Giving Examples</h4>
+                            <div class="amount-examples">
+                                <div class="example">
+                                    <span class="amount">$25/month</span>
+                                    <span class="impact">Provides meals for 10 families</span>
+                                </div>
+                                <div class="example">
+                                    <span class="amount">$50/month</span>
+                                    <span class="impact">Supports youth ministry activities</span>
+                                </div>
+                                <div class="example">
+                                    <span class="amount">$100/month</span>
+                                    <span class="impact">Funds community outreach programs</span>
+                                </div>
+                                <div class="example">
+                                    <span class="amount">$250/month</span>
+                                    <span class="impact">Supports pastoral care and counseling</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Other Methods Tab -->
+                <div class="tab-content" id="other">
+                    <div class="other-methods">
+                        <h3>Alternative Giving Methods</h3>
+                        <div class="methods-grid">
+                            <div class="method-card">
+                                <div class="method-icon">
+                                    <i class="fas fa-money-check"></i>
+                                </div>
+                                <h4>Check or Cash</h4>
+                                <p>You can give by check or cash during any service or drop it off at the church office.</p>
+                                <p><strong>Make checks payable to:</strong><br>Grace Community Church</p>
+                            </div>
+                            
+                            <div class="method-card">
+                                <div class="method-icon">
+                                    <i class="fas fa-university"></i>
+                                </div>
+                                <h4>Bank Transfer</h4>
+                                <p>Set up a direct bank transfer to our church account.</p>
+                                <p><strong>Account Details:</strong><br>
+                                Bank: First National Bank<br>
+                                Account: 123456789<br>
+                                Routing: 987654321</p>
+                            </div>
+                            
+                            <div class="method-card">
+                                <div class="method-icon">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </div>
+                                <h4>Text to Give</h4>
+                                <p>Send a text message with your donation amount.</p>
+                                <p><strong>Text:</strong> Amount to <strong>(555) 234-5678</strong><br>
+                                Example: Text "$50" to (555) 234-5678</p>
+                            </div>
+                            
+                            <div class="method-card">
+                                <div class="method-icon">
+                                    <i class="fas fa-gift"></i>
+                                </div>
+                                <h4>Planned Giving</h4>
+                                <p>Include Grace Community Church in your will or estate planning.</p>
+                                <p>Contact our office to discuss legacy giving options and tax benefits.</p>
+                            </div>
+                            
+                            <div class="method-card">
+                                <div class="method-icon">
+                                    <i class="fas fa-car"></i>
+                                </div>
+                                <h4>Vehicle Donation</h4>
+                                <p>Donate your car, truck, or other vehicle to support our ministry.</p>
+                                <p>We partner with a trusted vehicle donation service for easy processing.</p>
+                            </div>
+                            
+                            <div class="method-card">
+                                <div class="method-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <h4>Stock & Securities</h4>
+                                <p>Donate appreciated stocks or securities for potential tax benefits.</p>
+                                <p>Contact our financial team for account information and assistance.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="impact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Your Impact</h2>
+                <p>See how your donations make a difference in our community</p>
+            </div>
+            <div class="impact-grid">
+                <div class="impact-card">
+                    <div class="impact-image">
+                        <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Food Pantry">
+                    </div>
+                    <div class="impact-content">
+                        <h3>Community Food Pantry</h3>
+                        <p>$50 provides groceries for a family of four for one week</p>
+                        <div class="impact-stat">
+                            <span class="number">500+</span>
+                            <span class="label">Families fed monthly</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="impact-card">
+                    <div class="impact-image">
+                        <img src="https://images.unsplash.com/photo-1497486751825-1233686d5d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Youth Programs">
+                    </div>
+                    <div class="impact-content">
+                        <h3>Youth Programs</h3>
+                        <p>$100 sponsors one child for after-school programs for a month</p>
+                        <div class="impact-stat">
+                            <span class="number">150+</span>
+                            <span class="label">Youth served weekly</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="impact-card">
+                    <div class="impact-image">
+                        <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Community Outreach">
+                    </div>
+                    <div class="impact-content">
+                        <h3>Community Outreach</h3>
+                        <p>$200 funds housing assistance for a family in crisis</p>
+                        <div class="impact-stat">
+                            <span class="number">75+</span>
+                            <span class="label">Families helped annually</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transparency Section -->
+    <section class="transparency">
+        <div class="container">
+            <div class="transparency-content">
+                <div class="transparency-text">
+                    <h2>Financial Transparency</h2>
+                    <p>We believe in being good stewards of your generous donations. Here's how your contributions are used:</p>
+                    
+                    <div class="expense-breakdown">
+                        <div class="expense-item">
+                            <div class="expense-bar">
+                                <div class="expense-fill" style="width: 45%"></div>
+                            </div>
+                            <div class="expense-details">
+                                <span class="expense-category">Ministry Programs</span>
+                                <span class="expense-percentage">45%</span>
+                            </div>
+                        </div>
+                        <div class="expense-item">
+                            <div class="expense-bar">
+                                <div class="expense-fill" style="width: 30%"></div>
+                            </div>
+                            <div class="expense-details">
+                                <span class="expense-category">Facility & Operations</span>
+                                <span class="expense-percentage">30%</span>
+                            </div>
+                        </div>
+                        <div class="expense-item">
+                            <div class="expense-bar">
+                                <div class="expense-fill" style="width: 20%"></div>
+                            </div>
+                            <div class="expense-details">
+                                <span class="expense-category">Community Outreach</span>
+                                <span class="expense-percentage">20%</span>
+                            </div>
+                        </div>
+                        <div class="expense-item">
+                            <div class="expense-bar">
+                                <div class="expense-fill" style="width: 5%"></div>
+                            </div>
+                            <div class="expense-details">
+                                <span class="expense-category">Administration</span>
+                                <span class="expense-percentage">5%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="btn btn-secondary">View Annual Report</a>
+                </div>
+                
+                <div class="transparency-image">
+                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Financial Planning">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-church"></i>
+                        <span>Grace Community Church</span>
+                    </div>
+                    <p>A community of faith, hope, and love where everyone is welcome to experience God's grace.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Service Times</h4>
+                    <ul>
+                        <li>Sunday Worship: 9:00 AM & 11:00 AM</li>
+                        <li>Bible Study: Wednesday 7:00 PM</li>
+                        <li>Youth Ministry: Friday 6:00 PM</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Faith Street, Your City, ST 12345</li>
+                        <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@gracecommunitychurch.org</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Grace Community Church. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
