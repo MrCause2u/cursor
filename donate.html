@@ -3,10 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donate - Aloysius Ministries</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- SEO Meta Tags -->
+    <title>Donate $20+ to Children's Ministry | Support 250+ Kids | Aloysius Ministries | Meals & Education</title>
+    <meta name="description" content="Donate minimum $20 to support Aloysius Ministries' children's programs. Help provide meals and education to 250+ children. Support Pastor Aloysius's Bible study program. Children's meals fund, education sponsorship, and ministry support available. Tax-deductible donations.">
+    <meta name="keywords" content="donate Aloysius Ministries, children's ministry donation, $20 minimum donation, support children Bible study, children's meals fund, education sponsorship, Pastor Aloysius donation, ministry support, tax deductible donation">
+    <meta name="author" content="Aloysius Ministries">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://aloysiusministries.org/donate.html">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Donate to Support 250+ Children - Aloysius Ministries">
+    <meta property="og:description" content="Help provide meals and education to 250+ children. Minimum $20 donation supports children's Bible study program. Tax-deductible.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aloysiusministries.org/donate.html">
+    <meta property="og:image" content="https://aloysiusministries.org/images/children-donation.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Donate $20+ to Support Children's Ministry">
+    <meta name="twitter:description" content="Support 250+ children through Bible study, meals & education. Help Pastor Aloysius overcome funding challenges.">
+    <meta name="twitter:image" content="https://aloysiusministries.org/images/children-donation.jpg">
+    
+    <!-- Performance Optimization -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="dns-prefetch" href="https://images.unsplash.com">
+    
+    <!-- Critical CSS -->
+    <style>
+        body{font-family:'Poppins',sans-serif;margin:0;padding:0;line-height:1.6}
+        .navbar{background:rgba(255,255,255,0.95);backdrop-filter:blur(10px);position:fixed;top:0;width:100%;z-index:1000;padding:1rem 0}
+        .donate-header{padding:150px 0 80px;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;text-align:center}
+        .container{max-width:1200px;margin:0 auto;padding:0 20px}
+        .btn-primary{background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;padding:12px 30px;text-decoration:none;border-radius:25px;display:inline-block}
+    </style>
+    
+    <!-- Deferred CSS Loading -->
+    <link rel="preload" href="css/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/styles.css"></noscript>
+    
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
+    
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"></noscript>
+    
+    <!-- Structured Data for Donations -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "DonateAction",
+        "agent": {
+            "@type": "Organization",
+            "name": "Aloysius Ministries",
+            "url": "https://aloysiusministries.org"
+        },
+        "recipient": {
+            "@type": "Organization",
+            "name": "Aloysius Ministries",
+            "description": "Children's Bible study program serving 250+ children",
+            "founder": "Pastor Kabagambe Aloyzious"
+        },
+        "purpose": "Support children's Bible study program, provide meals and education to 250+ children",
+        "minPrice": "20",
+        "priceCurrency": "USD",
+        "availableChannel": {
+            "@type": "ServiceChannel",
+            "serviceType": "Online Donation",
+            "availableLanguage": "English"
+        }
+    }
+    </script>
+    
+    <!-- Additional Nonprofit Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "NGO",
+        "name": "Aloysius Ministries",
+        "alternateName": "Aloysius Prophetic and Healing Ministries",
+        "description": "Nonprofit ministry serving 250+ children through Bible study, meals, and education programs",
+        "foundingDate": "2015",
+        "founder": {
+            "@type": "Person",
+            "name": "Pastor Kabagambe Aloyzious"
+        },
+        "nonprofitStatus": "NonprofitType",
+        "seeks": {
+            "@type": "Demand",
+            "name": "Financial Support for Children's Programs"
+        }
+    }
+    </script>
 </head>
 <body>
     <!-- Navigation -->
@@ -477,6 +568,6 @@
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
 </body>
 </html>

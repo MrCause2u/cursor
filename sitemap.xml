@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    
+    <!-- Home Page -->
+    <url>
+        <loc>https://aloysiusministries.org/</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://aloysiusministries.org/images/ministry-hero.jpg</image:loc>
+            <image:title>Aloysius Ministries - Children's Bible Study Program</image:title>
+            <image:caption>250+ children participating in Bible study, worship, and receiving meals</image:caption>
+        </image:image>
+    </url>
+    
+    <!-- About Page -->
+    <url>
+        <loc>https://aloysiusministries.org/about.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://aloysiusministries.org/images/pastor-aloysius.jpg</image:loc>
+            <image:title>Pastor Kabagambe Aloyzious - Founder of Aloysius Ministries</image:title>
+            <image:caption>Pastor Aloysius founded the ministry in 2015 with prophetic and healing gifts</image:caption>
+        </image:image>
+    </url>
+    
+    <!-- Contact Page -->
+    <url>
+        <loc>https://aloysiusministries.org/contact.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Donate Page -->
+    <url>
+        <loc>https://aloysiusministries.org/donate.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://aloysiusministries.org/images/children-donation.jpg</image:loc>
+            <image:title>Support Children's Ministry - Minimum $20 Donation</image:title>
+            <image:caption>Help provide meals and education to 250+ children through donations</image:caption>
+        </image:image>
+    </url>
+    
+</urlset>

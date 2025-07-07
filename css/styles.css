@@ -1,4 +1,4 @@
-/* Reset and Base Styles */
+/* Reset and Base Styles with Performance Optimizations */
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +7,8 @@
 
 html {
     scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
 }
 
 body {
@@ -14,6 +16,39 @@ body {
     line-height: 1.6;
     color: #333;
     overflow-x: hidden;
+    font-display: swap; /* Improves font loading performance */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeSpeed;
+}
+
+/* Performance: Reduce paint operations */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Optimize image loading */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border: 0;
+    font-style: italic;
+    background-repeat: no-repeat;
+    background-size: cover;
+    shape-margin: 0.75rem;
+}
+
+/* Lazy loading support */
+img[loading="lazy"] {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+img[loading="lazy"].loaded {
+    opacity: 1;
 }
 
 .container {
