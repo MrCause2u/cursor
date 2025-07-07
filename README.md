@@ -1,6 +1,6 @@
-# Grace Community Church Website
+# Aloysius Ministries Website
 
-A modern, responsive website for a church/non-profit organization with donation functionality and comprehensive content management.
+A modern, responsive website for Aloysius Ministries - a life-changing ministry dedicated to spreading the gospel of our Lord Jesus Christ, with specialized focus on children's Bible study programs and donation functionality.
 
 ## 🌟 Features
 
@@ -40,13 +40,14 @@ A modern, responsive website for a church/non-profit organization with donation 
    - Impact statistics and transparency
 
 ### 💰 Donation Features
-- **One-time donations** with preset amounts
-- **Custom donation amounts**
-- **Monthly recurring giving**
+- **One-time donations** with $20 minimum (focused on children's ministry)
+- **Custom donation amounts** starting from $20
+- **Monthly recurring giving** for sustained support
 - **Multiple payment methods** (Credit/Debit, PayPal, Bank Transfer)
 - **Secure donation processing**
 - **Tax receipt options**
 - **Alternative giving methods** (Check, Text-to-Give, Planned Giving, etc.)
+- **Specific donation categories** (Children's meals, education sponsorship, ministry support)
 
 ### 🎨 Design Elements
 - **Modern gradient color scheme** (Purple/Blue theme)
@@ -104,11 +105,12 @@ A modern, responsive website for a church/non-profit organization with donation 
 
 ## 🛠️ Customization
 
-### Changing Church Information
-1. **Church Name**: Update all instances of "Grace Community Church" in HTML files
-2. **Contact Information**: Modify address, phone, and email in contact sections
-3. **Service Times**: Update service schedules in footer and contact page
-4. **Leadership Team**: Replace leader photos and information in `about.html`
+### Changing Ministry Information
+1. **Ministry Name**: Currently set to "Aloysius Ministries" throughout all files
+2. **Contact Information**: Update contact details in footer and contact sections
+3. **Ministry Schedule**: Currently set for Children's Bible Study (1st & 3rd Saturday)
+4. **Leadership Team**: Features Pastor Kabagambe Aloyzious (Pastor Aloysius) in `about.html`
+5. **Donation Minimums**: Currently set to $20 minimum reflecting ministry needs
 
 ### Styling Customization
 1. **Colors**: Modify CSS variables in `styles.css`
